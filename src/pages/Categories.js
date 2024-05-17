@@ -78,7 +78,7 @@ export default function Categories(props) {
             return (
               <div className="result">
                 <Link key={id} to={`/product/${id}`}>
-                  <img src={thumbnail}></img>
+                  <img src={thumbnail} alt={category}></img>
                   <h2>{category}</h2>
                 </Link>
               </div>

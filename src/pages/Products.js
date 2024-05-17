@@ -37,9 +37,13 @@ function Products({ addAction }) {
       console.error(error);
     }
   };
-  useEffect(() => {
-    fetchProduct();
-  }, []);
+  useEffect(
+    () => {
+      fetchProduct();
+    },
+    // eslint-disable-next-line
+    []
+  );
   const renderProduct = () => {
     return (
       <div className="products">
