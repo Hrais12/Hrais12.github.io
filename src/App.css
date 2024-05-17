@@ -22,11 +22,16 @@
   display: flex;
   justify-content: space-around;
 }
+h2{
+  color: rgb(44, 59, 59);
+  margin: 50px;
+}
 
 .result {
   margin-bottom: 30px;
   margin-right: 20px ;
-  width: 20%;
+  width: 15%;
+  height:auro;
   
   border-radius: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -34,6 +39,9 @@
   padding: 10px;
   background-color: rgb(200, 221, 220);
   
+}
+.result img{
+  width: 100%;
 }
 .result a{
   color: rgb(44, 59, 59);
@@ -43,13 +51,17 @@
   text-align: center;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px;
+    
+    position: relative;
+    justify-content: center;
 }
 .products{
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  margin: 50px;
+  position: relative;
+  justify-content: center;
+  margin-top: 50px;
   
 }
 .productResult{
@@ -65,15 +77,20 @@
   
 }
 .productImg{
-  border: solid red;
-  height:40%;
-  margin: 10px;
+  /* border: solid red; */
+  height:60%;
+  /* margin: 10px; */
 }
 
 .productImg img{
-  width: 200px;
-  height: 100%;
+  
+  width: 100%;
+  height: 90%;
 }
+/* .productInfo1{
+border: solid red;
+height: 80px;
+} */
 button{
 
   background-color:rgb(51, 101, 87);
@@ -85,10 +102,8 @@ button{
   margin: 10px 0px 10px;
 
 }
-.title{
+.h3{
   color: rgb(44, 59, 59);
-  height: 100px;
-font-weight:400 ;
 }
 .productResult h3{
   color: rgb(44, 59, 59);
@@ -98,8 +113,11 @@ font-weight:400 ;
 
   /* border: solid black; */
   width: 90vw;
-  margin: 20px;
+  /* margin: 20px; */
   margin-bottom: 120px;
+
+ 
+  
   
 
 }
@@ -141,6 +159,9 @@ font-weight:400 ;
 .screen{
  /* border: solid red; */
   width: 80vw;
+  position: relative;
+  left: 200px;
+  
   
 }
 
@@ -167,6 +188,26 @@ font-weight:400 ;
 }
 .plus, .minus{
   margin: 20px;
+}
+
+.home{
+  
+  width: 60%;
+  text-align: center;
+  margin: 50px 300px;
+  height: 40em;
+  background-image: url(https://thumbs.dreamstime.com/b/ketogenic-diet-buddha-bowl-dish-meatloaf-chicken-meat-avocado-berries-nuts-detox-healthy-concept-keto-food-overhead-top-157553089.jpg);
+  background-size: contain;
+  /* background-color: rgba(255, 255, 255, 0.371);
+    background-blend-mode: lighten; */
+}
+.home button{
+  padding: 20px;
+  font-size: xx-large;
+  position: relative;
+  top: 80%;
+  left:-30%;
+
 }
 
 .App-logo {

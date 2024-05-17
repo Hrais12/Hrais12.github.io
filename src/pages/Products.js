@@ -48,10 +48,11 @@ function Products({ addAction }) {
             <div className="productImg">
               <img src={item.image} alt={item.recipe}></img>
             </div>
-            <div className="title">{item.recipe}</div>
-            <h3> ${item.price}</h3>
-
-            <button onClick={() => addAction(item)}>Add to cart</button>
+            <div className="productInfo1">
+              <h3 className="title">{item.recipe}</h3>
+              <h3> ${item.price}</h3>
+              <button onClick={() => addAction(item)}>Add to cart</button>
+            </div>
           </div>
         ))}
       </div>
