@@ -2,8 +2,11 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-function Products() {
+function Products({ addAction }) {
   const apiKey = process.env.REACT_APP_API_KEY;
+
+  const getRandomPrice = () => Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+  console.log(getRandomPrice());
 
   const params = useParams();
   const id = params.id;
@@ -14,16 +17,22 @@ function Products() {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": apiKey,
+      "X-RapidAPI-Key": "d6369e91b2msh63e55bd5df24d19p161c07jsn73f0db26f57d",
       "X-RapidAPI-Host": "keto-diet.p.rapidapi.com",
     },
   };
+
   const fetchProduct = async () => {
     try {
       const response = await fetch(url, options);
       const result = await response.json();
-      console.log(result);
-      setProduct(result);
+      const productsWithPrices = result.map((product) => ({
+        ...product,
+        price: getRandomPrice(),
+      }));
+
+      console.log(productsWithPrices);
+      setProduct(productsWithPrices);
     } catch (error) {
       console.error(error);
     }
@@ -34,17 +43,15 @@ function Products() {
   const renderProduct = () => {
     return (
       <div className="products">
-        {product.map((hit, index) => (
+        {product.map((item, index) => (
           <div key={index} className="productResult">
             <div className="productImg">
-              <img src={hit.image} alt={hit.recipe}></img>
+              <img src={item.image} alt={item.recipe}></img>
             </div>
-            <div className="title">{hit.recipe}</div>
-            <h3>{hit.product_price}</h3>
+            <div className="title">{item.recipe}</div>
+            <h3> ${item.price}</h3>
 
-            <a href="">
-              <button>Check it out</button>
-            </a>
+            <button onClick={() => addAction(item)}>Add to cart</button>
           </div>
         ))}
       </div>

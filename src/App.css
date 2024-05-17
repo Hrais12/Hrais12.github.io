@@ -1,6 +1,27 @@
 .App {
   text-align: center;
 }
+.nav {
+  display: flex;
+  justify-content:space-around;
+  padding: 15px;
+  font-size: 2em;
+  width: 30vw;
+ 
+}
+
+.nav a {
+  color: rgb(48, 81, 48);
+  text-decoration: none;
+}
+.logo{
+  width: 90px;
+  border-radius: 50%;
+}
+.navLogo{
+  display: flex;
+  justify-content: space-around;
+}
 
 .result {
   margin-bottom: 30px;
@@ -71,6 +92,81 @@ font-weight:400 ;
 }
 .productResult h3{
   color: rgb(44, 59, 59);
+}
+
+.selectedItems{
+
+  /* border: solid black; */
+  width: 90vw;
+  margin: 20px;
+  margin-bottom: 120px;
+  
+
+}
+.item{
+  margin-bottom: 30px;
+  /* margin-right: 20px ; */
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+  
+  
+  
+}
+
+
+.item img {
+  width: 30%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  
+}
+
+.itemInfo{
+  display: flex;
+  
+}
+
+.info{
+
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.screen{
+ /* border: solid red; */
+  width: 80vw;
+  
+}
+
+
+
+.checkoutBtn{
+  padding: 10px;
+  margin: 10px;
+  font-size: larger;
+}
+.checkout{
+  /* border: solid green; */
+  margin-bottom: 30px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+  text-align: left;
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0;
+  background-color: white;
+}
+.plus, .minus{
+  margin: 20px;
 }
 
 .App-logo {
