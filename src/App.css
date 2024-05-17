@@ -2,6 +2,77 @@
   text-align: center;
 }
 
+.result {
+  margin-bottom: 30px;
+  margin-right: 20px ;
+  width: 20%;
+  
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+  background-color: rgb(200, 221, 220);
+  
+}
+.result a{
+  color: rgb(44, 59, 59);
+  text-decoration-line: none;
+}
+.result1{
+  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.products{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  
+}
+.productResult{
+  margin-bottom: 30px;
+  margin-right: 20px ;
+  width: 20%;
+  height:auto;
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 10px;
+  /* background-color: rgb(200, 221, 220); */
+  
+}
+.productImg{
+  border: solid red;
+  height:40%;
+  margin: 10px;
+}
+
+.productImg img{
+  width: 200px;
+  height: 100%;
+}
+button{
+
+  background-color:rgb(51, 101, 87);
+  border-radius: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+  color: white;
+  font-weight: bold;
+  margin: 10px 0px 10px;
+
+}
+.title{
+  color: rgb(44, 59, 59);
+  height: 100px;
+font-weight:400 ;
+}
+.productResult h3{
+  color: rgb(44, 59, 59);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
