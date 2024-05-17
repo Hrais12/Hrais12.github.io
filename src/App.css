@@ -210,6 +210,15 @@ button{
 
 }
 
+.navCart span{
+  padding: 0 6px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

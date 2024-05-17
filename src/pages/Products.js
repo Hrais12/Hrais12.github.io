@@ -17,7 +17,7 @@ function Products({ addAction }) {
   const options = {
     method: "GET",
     headers: {
-      "X-RapidAPI-Key": "d6369e91b2msh63e55bd5df24d19p161c07jsn73f0db26f57d",
+      "X-RapidAPI-Key": apiKey,
       "X-RapidAPI-Host": "keto-diet.p.rapidapi.com",
     },
   };

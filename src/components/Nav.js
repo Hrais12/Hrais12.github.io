@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+export default function Nav({ count }) {
   return (
     <div className="navLogo">
       <Link key="home" to="/">
@@ -19,7 +19,10 @@ export default function Nav() {
           <div>Menu</div>
         </Link>
         <Link key="cart" to="/cart">
-          <div>Cart</div>
+          <div className="navCart">
+            Cart <span>{count}</span>
+          </div>
+          <div></div>
         </Link>
       </div>
     </div>

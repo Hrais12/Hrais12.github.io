@@ -14,6 +14,7 @@ export default function App() {
   const [total, setTotal] = useState(0);
   const [count, setCount] = useState(0);
   const [quantity, setQuantity] = useState([]);
+  const [show, setShow] = useState(true);
 
   const addItem = (item) => {
     const itemIndex = selectedItems.findIndex(
@@ -71,7 +72,7 @@ export default function App() {
   // We will use the Route component, path attribute, and element attribute to specify each route.
   return (
     <div className="App">
-      <Nav />
+      <Nav count={count} />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/categories" element={<Categories />} />
